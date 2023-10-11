@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* styles for the Header */
+
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.edit-header {
+    background-color: #ffffff;
+    width: 1248px;
+    height: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-header .edit-logo {
+    color: #686AA1;
+    padding: 50px;
+    font-family: 'Allerta Stencil';
+    font-size: 22px;
+}
+
+.edit-header span {
+    color: #A18A68;
+    
+}
+
+.edit-header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-header ul {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.edit-header .edit-menu {
+    color: #000000;
+    font-family: 'DM Sans';
+    font-size: 16px;
+}
+
+/* style for the section */
+
+section {
+    background-image: url("./photos-brief-2/Img\ 01.png");
+    width: 1248px;
+    height: 646px;
+}
+
+.edit-photo1-text {
+    width: 1248px;
+    height: 646px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.edit-photo1-text .edit-div {
+    padding-left: 50px;
+
+}
+
+.edit-photo1-text .edit-text1 {
+    font-family: 'DM Sans';
+    font-size: 33px;
+    color: #ffffff;
+    
+}
+
+.edit-photo1-text .edit-text2 {
+    font-family: 'DM Sans';
+    font-size: 26px;
+    color: #ffffff;
+    
+}
+
+.edit-photo1-text .edit-button {
+    background-color: transparent;
+    width: 193px;
+    height: 53;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    font-family: 'DM Sans';
+    font-size: 20px;
+}
+
+.edit-photo1-text .edit-button .edit-a-color {
+    color: #ffffff;
+}
+
+.edit-number-of-product {
+    width: 700px;
+    height: 646px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.edit-number-of-product .span1 {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.edit-number-of-product .span2, .span3, .span4, .span5 {
+    background-color: #ffffff;
+    width: 9.14px;
+    height: 9.14px;
+    border-radius: 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Edit the shop the lastes and view */
+
+
+.edit-shopthelastes-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.edit-shopthelastes-view div:nth-child(1) {
+    font-size: 33px;
+    font-family: 'DM Sans';
+}
+
+.edit-shopthelastes-view div:nth-child(2) {
+    font-size: 20px;
+    font-family: 'DM Sans';
+    color: #A18A68;
+}
+
+/* edit cart of product */
+
+.edit-cart-album {
+    
+    width: 1248px;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.edit-cart-album .edit-cart-product {
+    
+    width: 380px;
+    height: 472px;
+}
+
+.edit-cart-album .edit-cart-product p{
+    font-family: 'DM Sans';
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+}
+
+.edit-cart-album .edit-cart-product span {
+    font-family: 'DM Sans';
+    font-size: 20px;
+    color: #A18A68;
+}
+
+/* edit the about */
+
+.edit-about {
+    width: 1146px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.edit-about div:nth-child(1) {
+    padding: 15px;
+    font-family: 'DM Sans';
+    font-size: 33px;
+}
+
+.edit-about div:nth-child(2) {
+    padding: 15px;
+    font-family: 'DM Sans';
+    font-size: 20px;
+}
+
+.edit-about div:nth-child(3){
+    padding: 15px 0 15px 0;
+    font-family: 'DM Sans';
+    font-family: 16px;
+}
+
+/* edit trend care */
+
+.edit-trend-care {
+    width: 1146px;
+    height: 1200px;
+}
+
+.edit-trend {
+    width: 1146;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.edit-trend-care .edit-trend-care-title {
+    font-family: 'DM Sans';
+    font-size: 26px;
+}
+
+.edit-trend-care .edit-description {
+    font-family: 'DM Sans';
+    font-size: 16px;
+}
+
+.edit-trend-care div:nth-child(1) .edit-description-list {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.edit-care {
+    width: 1146px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* edit footer */
+
+.edit-footer {
+    width: 1248px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #707070;
+}
+
+.edit-help {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-info-menu {
+    color: #707070;
+    font-family: 'DM Sans';
+    font-size: 16px;
+}
+
+.edit-singup {
+    width: 700px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-singup ul {
+    list-style: none;
+}
+
+.edit-singup ul .edit-singup-menu {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    color: #707070;
+}
+
+.edit-singup ul .edit-singup-border {
+    color: #707070;
+}
+
+.edit-footer-icon {
+    width: 200px;
+    height: 40px;
+    margin-left: 900px;
+    margin-bottom: 60px;
+}
+
