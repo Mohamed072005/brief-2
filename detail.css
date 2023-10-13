@@ -181,10 +181,10 @@ body {
     list-style: none;
 }
 
-.edit-singup ul .edit-singup-menu {
-    font-family: 'DM Sans';
-    font-size: 16px;
-    color: #707070;
+.edit-singup ul input {
+    width: 250px;
+    height: 40px;
+    border: none;
 }
 
 .edit-singup ul .edit-singup-border {
