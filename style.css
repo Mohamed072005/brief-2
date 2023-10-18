@@ -8,13 +8,12 @@
 
 body {
    display: flex;
-   flex-direction: column;
-   align-items: center;
+   flex-wrap: wrap;
 }
 
 .edit-header {
     background-color: #ffffff;
-    width: 1248px;
+    width: 100%;
     height: 42px;
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +25,7 @@ body {
     color: #686AA1;
     padding: 50px;
     font-family: 'Allerta Stencil';
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 .edit-header span {
@@ -37,6 +36,7 @@ body {
 .edit-header nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .edit-header ul {
@@ -49,84 +49,86 @@ body {
 .edit-header .edit-menu {
     color: #000000;
     font-family: 'DM Sans';
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* style for the section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
 
 section {
-    background-image: url("./photos-brief-2/Img\ 01.png");
-    width: 1248px;
-    height: 646px;
+    background-image: url(./photos-brief-2/Img\ 01-edit.png);
+    width: 88%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 15px 15px 15px;
+    display: flex;
+    align-items: end;
 }
 
 .edit-photo1-text {
-    width: 1248px;
-    height: 646px;
+    width: 55%;
+    height: 45vh;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-left: 5%;
 }
 
-.edit-photo1-text .edit-div {
-    padding-left: 50px;
-
-}
-
-.edit-photo1-text .edit-text1 {
-    font-family: 'DM Sans';
-    font-size: 33px;
+.edit-photo1-text div:nth-child(1) .edit-text1 {
+    font-size: 2.5rem;
     color: #ffffff;
-    
-}
-
-.edit-photo1-text .edit-text2 {
     font-family: 'DM Sans';
-    font-size: 26px;
-    color: #ffffff;
-    
 }
 
-.edit-photo1-text .edit-button {
-    background-color: transparent;
-    width: 193px;
-    height: 53;
+.edit-photo1-text div:nth-child(1) .edit-text2 {
+    font-size: 1.5rem;
+    color: #A18A68;
+    font-family: 'DM Sans';
+}
+
+.edit-photo1-text div:nth-child(2) .edit-button{
+    background: none;
+    width: 159px;
+    height: 8vh;
     border: 2px solid #ffffff;
-    border-radius: 6px;
-    font-family: 'DM Sans';
-    font-size: 20px;
+    border-radius: 5px;
 }
 
-.edit-photo1-text .edit-button .edit-a-color {
+.edit-photo1-text div:nth-child(2) .edit-button .edit-a-color {
+    font-size: 1.25rem;
+    font-family: 'DM Sans';
     color: #ffffff;
 }
 
-.edit-number-of-product {
-    width: 700px;
-    height: 646px;
+.edit-photo1-text .edit-number-of-product {
+    width: 20%;
+    height: 5vh; 
+    align-self: flex-end;
     display: flex;
-    align-items: flex-end;
+    gap: 10px;
 }
 
-.edit-number-of-product .span1 {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #ffffff;
+.edit-photo1-text .edit-number-of-product .cercle1 {
+    width: 12px;
+    height: 12px;
     border-radius: 50px;
-    margin-left: 40px;
-    margin-bottom: 15px;
-}
-
-.edit-number-of-product .span2, .span3, .span4, .span5 {
     background-color: #ffffff;
-    width: 9.14px;
-    height: 9.14px;
-    border-radius: 50px;
-    margin-left: 30px;
-    margin-bottom: 20px;
 }
 
+.edit-photo1-text .edit-number-of-product .cercle2, .cercle3, .cercle4, .cercle5 {
+    width: 7px;
+    height: 7px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
 /* Edit the shop the lastes and view */
 
 
@@ -135,39 +137,41 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
+    width: 85%;
 }
 
 .edit-shopthelastes-view div:nth-child(1) {
     font-size: 33px;
     font-family: 'DM Sans';
+    align-self: flex-start;
 }
 
-.edit-shopthelastes-view div:nth-child(2) {
+.edit-shopthelastes-view div:nth-child(2) a {
     font-size: 20px;
     font-family: 'DM Sans';
     color: #A18A68;
+    align-items: flex-end;
 }
 
 /* edit cart of product */
 
 .edit-cart-album {
-    
-    width: 1248px;
-    height: 1200px;
+    width: 80%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .edit-cart-album .edit-cart-product {
-    
     width: 380px;
     height: 472px;
 }
 
 .edit-cart-album .edit-cart-product p{
     font-family: 'DM Sans';
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 10px 0 20px 0;
 }
 
@@ -180,8 +184,8 @@ section {
 /* edit the about */
 
 .edit-about {
-    width: 1146px;
-    height: 200px;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,31 +195,31 @@ section {
 .edit-about div:nth-child(1) {
     padding: 15px;
     font-family: 'DM Sans';
-    font-size: 33px;
+    font-size: 2rem;
 }
 
 .edit-about div:nth-child(2) {
     padding: 15px;
     font-family: 'DM Sans';
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .edit-about div:nth-child(3){
     padding: 15px 0 15px 0;
     font-family: 'DM Sans';
-    font-family: 16px;
+    font-family: 1.3rem;
 }
 
 /* edit trend care */
 
 .edit-trend-care {
-    width: 1146px;
-    height: 1200px;
+    width: 75%;
+    height: auto;
 }
 
 .edit-trend {
-    width: 1146;
-    height: 600px;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -223,79 +227,63 @@ section {
 
 .edit-trend-care .edit-trend-care-title {
     font-family: 'DM Sans';
-    font-size: 26px;
+    font-size: 1.6rem;
 }
 
 .edit-trend-care .edit-description {
     font-family: 'DM Sans';
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 .edit-trend-care div:nth-child(1) .edit-description-list {
     font-family: 'DM Sans';
-    font-size: 16px;
+    font-size: 1.3rem;
     margin-left: 50px;
 }
 
 .edit-care {
-    width: 1146px;
-    height: 600px;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 /* edit footer */
-
-.edit-footer {
-    width: 1248px;
-    height: 300px;
+footer{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.fotter{
+    padding-top: 50px;
+    border-top: 1px solid gray;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 1px solid #707070;
 }
-
-.edit-help {
-    width: 500px;
-    height: 200px;
+.leftcontent{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.leftcontent a{
+   color: black;
+}
+.rightcontent{
+    display: grid;
+    gap: 20px;
 }
 
-.edit-info-menu {
-    color: #707070;
-    font-family: 'DM Sans';
-    font-size: 16px;
-}
-
-.edit-singup {
-    width: 700px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.edit-singup ul {
-    list-style: none;
-}
-
-.edit-singup ul input {
-    width: 250px;
-    height: 40px;
+.divtop input{
+    width: 90%;
+    height: 80%;
     border: none;
+    border-bottom: 0.5px solid #A18A68;
 }
 
-.edit-singup ul .edit-singup-border {
-    color: #707070;
+::placeholder {
+    font-size: 1rem;
 }
-
-.edit-footer-icon {
-    width: 200px;
-    height: 40px;
-    margin-left: 900px;
-    margin-bottom: 60px;
-}
-

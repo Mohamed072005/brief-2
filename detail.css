@@ -8,13 +8,12 @@
 
 body {
    display: flex;
-   flex-direction: column;
-   align-items: center;
+   flex-wrap: wrap;
 }
 
 .edit-header {
     background-color: #ffffff;
-    width: 1248px;
+    width: 100%;
     height: 42px;
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +25,7 @@ body {
     color: #686AA1;
     padding: 50px;
     font-family: 'Allerta Stencil';
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 .edit-header span {
@@ -37,6 +36,7 @@ body {
 .edit-header nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .edit-header ul {
@@ -49,29 +49,36 @@ body {
 .edit-header .edit-menu {
     color: #000000;
     font-family: 'DM Sans';
-    font-size: 16px;
+    font-size: 1rem;
 }
 /* style product detai*/
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
 .edit-detail-product {
-    width: 1248px;
-    height: 800px;
+    width: 70%;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 100px;
+    gap: 20px;
+    padding-top: 15vh;
 }
 
 .edit-detail-product .edit-image {
-    width: 450px;
-    height: 450px;
-    
-    padding-left: 100px;
+    width: 500px;
+    height: 500px;
 }
 
 .edit-detail-product .edit-detail {
-    width: 500px;
-    height: 450px;
+    width: 700px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,19 +86,18 @@ body {
 
 .edit-detail-product .edit-detail .edit-text-1 {
     font-family: 'DM Sans';
-    font-size: 50px;
-
+    font-size: 3.5rem;
 }
 
 .edit-detail-product .edit-detail .edit-text-2 {
     font-family: 'DM Sans';
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #A18A68;
 }
 
 .edit-detail-product .edit-detail .edit-text-3 {
     font-family: 'DM Sans';
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .edit-detail-product .edit-detail .edit-stars {
@@ -100,7 +106,7 @@ body {
 }
 
 .edit-detail-product .edit-button-detail {
-    width: 400px;
+    width: 450px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -124,19 +130,20 @@ body {
 /* edit comment */
 
 .edit-comment {
-    width: 1248px;
-    height: 500px;
+    width: 60%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 20px;
     padding-top: 70px;
     border-top: 2px solid #707070;
+    gap: 30px;
 }
 
 .edit-comment .edit-comment-photo {
-    width: 1200px;
-    height: 100px;
+    width: 80%;
+    height: auto;
     display: flex;
 }
 
@@ -146,54 +153,44 @@ body {
 
 /* edit footer */
 
-.edit-footer {
-    width: 1248px;
-    height: 300px;
+footer{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fotter{
+    padding-top: 50px;
+    border-top: 1px solid gray;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 1px solid #707070;
 }
 
-.edit-help {
-    width: 500px;
-    height: 200px;
+.leftcontent{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.edit-info-menu {
-    color: #707070;
-    font-family: 'DM Sans';
-    font-size: 16px;
+.leftcontent a{
+   color: black;
 }
 
-.edit-singup {
-    width: 700px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.rightcontent{
+    display: grid;
+    gap: 20px;
 }
 
-.edit-singup ul {
-    list-style: none;
-}
-
-.edit-singup ul input {
-    width: 250px;
-    height: 40px;
+.div-input input{
+    width: 90%;
+    height: 80%;
     border: none;
+    border-bottom: 0.5px solid #A18A68;
 }
 
-.edit-singup ul .edit-singup-border {
-    color: #707070;
-}
-
-.edit-footer-icon {
-    width: 200px;
-    height: 40px;
-    margin-left: 900px;
-    margin-bottom: 60px;
+::placeholder {
+    font-size: 1rem;
 }
