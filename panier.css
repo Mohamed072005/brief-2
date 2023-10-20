@@ -7,15 +7,14 @@
 /* styles for the Header */
 
 body {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .edit-header {
     background-color: #ffffff;
-    width: 1248px;
+    width: 100%;
     height: 42px;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +26,7 @@ body {
     color: #686AA1;
     padding: 50px;
     font-family: 'Allerta Stencil';
-    font-size: 22px;
+    font-size: 2rem;
 }
 
 .edit-header span {
@@ -46,22 +45,29 @@ body {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    flex-wrap: wrap;
 }
 
 .edit-header .edit-menu {
     color: #000000;
     font-family: 'DM Sans';
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
 /* edit head 1 */
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    /* margin-top: 20px; */
+}
 
 .edit-head-1 {
-    width: 1248px;
-    height: 200px;
+    width: 100%;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,40 +75,57 @@ body {
 
 .edit-head-1 h1 {
     font-family: 'DM Sans';
-    font-size: 45px;
+    font-size: 2.8rem;
 }
 
 /* edit product album */
 
 .edit-product-album {
-    width: 1248px;
-    height: 1100px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 70px;
+    padding: 70px 0;
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
+    gap: 30px;
 }
 
 .edit-product-album .edit-product-info {
     width: 377px;
-    height: 472px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .edit-product-album .edit-product-info .text-1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'DM Sans';
 
 }
 
 .edit-product-album .edit-product-info .text-2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'DM Sans';
     color: #A18A68;
+}
+
+.edit-product-album .edit-product-info input {
+    align-self: flex-end;
+    width: 25%;
+    height: 3vh;
+    border-radius: 5px;
+    
+}
+
+::placeholder {
+    font-size: 30px;
+}
+
+input[type=text] {
+    font-size: 40px;
 }
 
 .edit-product-album .edit-product-info button {
@@ -120,91 +143,104 @@ body {
 /* edit the check out */
 
 .edit-check-out {
-    width: 1248px;
-    height: 400px;
+    width: 100%;
+    height: 45vh;
     padding-top: 120px;
 }
 
 .edit-price {
-    width: 1198px;
-    height: 100px;
+    width: 95%;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 50px; 
 }
 
 .edit-check-out .edit-price p {
     font-family: 'DM Sans';
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .edit-check-out .edit-check-out-button {
-    width: 1198;
-    height: 200px;
+    width: 100%;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .edit-check-out .edit-check-out-button button {
-    width: 450px;
-    height: 138px;
+    width: 45%;
+    height: 13vh;
     background-color: #db8504;
-    font-size: 50px;
+    font-size: 3rem;
     border-radius: 12px;
 }
 
 /* edit footer */
 
-.edit-footer {
-    width: 1248px;
-    height: 300px;
+/* edit footer */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.fotter{
+    padding-top: 50px;
+    border-top: 1px solid gray;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 1px solid #707070;
 }
-
-.edit-help {
-    width: 500px;
-    height: 200px;
+.leftcontent{
+    width: 38%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.leftcontent a{
+   color: black;
+}
+.rightcontent{
+    display: grid;
+    gap: 20px;
 }
 
-.edit-info-menu {
-    color: #707070;
-    font-family: 'DM Sans';
-    font-size: 16px;
-}
-
-.edit-singup {
-    width: 700px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.edit-singup ul {
-    list-style: none;
-}
-
-.edit-singup ul input {
-    width: 250px;
-    height: 40px;
+.divtop input{
+    width: 90%;
+    height: 80%;
     border: none;
+    border-bottom: 0.5px solid #A18A68;
 }
 
-.edit-singup ul .edit-singup-border {
-    color: #707070;
+::placeholder {
+    font-size: 1rem;
 }
 
-.edit-footer-icon {
-    width: 200px;
-    height: 40px;
-    margin-left: 900px;
-    margin-bottom: 60px;
+@media only screen and (max-width: 741px) {
+    .edit-header nav {
+        display: none;
+    }
+
+    .edit-header {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 25vh;
+    } 
+
+    .edit-check-out .edit-price p {
+        font-size: 25px;
+    }
+
+    .edit-check-out .edit-check-out-button button {
+        font-size: 25px;
+    }
+
+    .edit-product-album {
+        gap: 20px;
+    }
 }

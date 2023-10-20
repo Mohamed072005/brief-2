@@ -9,6 +9,7 @@
 body {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .edit-header {
@@ -133,6 +134,7 @@ section {
 
 
 .edit-shopthelastes-view {
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -188,7 +190,7 @@ section {
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 
 }
 
@@ -205,7 +207,7 @@ section {
 }
 
 .edit-about div:nth-child(3){
-    padding: 15px 0 15px 0;
+    padding: 15px 0;
     font-family: 'DM Sans';
     font-family: 1.3rem;
 }
@@ -218,6 +220,7 @@ section {
 }
 
 .edit-trend {
+    background-color: rgb(255, 255, 255);
     width: 90%;
     height: auto;
     display: flex;
@@ -265,6 +268,7 @@ footer{
     flex-wrap: wrap;
 }
 .leftcontent{
+    width: 38%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -286,4 +290,23 @@ footer{
 
 ::placeholder {
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 741px) {
+    section, .edit-header nav {
+        display: none;
+    }
+
+    .edit-header {
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 431px) {
+    .edit-trend-care {
+        width: 90%;
+    } 
 }
