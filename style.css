@@ -7,9 +7,9 @@
 /* styles for the Header */
 
 body {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .edit-header {
@@ -274,7 +274,7 @@ footer{
     gap: 20px;
 }
 .leftcontent a{
-   color: black;
+    color: black;
 }
 .rightcontent{
     display: grid;

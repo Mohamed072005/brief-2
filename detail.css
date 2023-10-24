@@ -122,6 +122,10 @@ main {
     border: none;
 }
 
+.edit-detail-product .edit-button-detail .edit-button-style:hover {
+    background-color: #ceb48c;
+}
+
 .edit-detail-product .edit-button-detail .edit-button-color {
     color: #ffffff;
     font-family: 'DM Sans';
@@ -175,7 +179,7 @@ footer{
     gap: 20px;
 }
 .leftcontent a{
-   color: black;
+    color: black;
 }
 .rightcontent{
     display: grid;
