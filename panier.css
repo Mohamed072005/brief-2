@@ -20,6 +20,17 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border-radius: 15px;
+    position: fixed;
+}
+
+.edit-header .div-burger-menu {
+    display: none;
+}
+
+.edit-header .div-burger-menu .open-button {
+    background: none;
+    border: none;
 }
 
 .edit-header .edit-logo {
@@ -51,6 +62,75 @@ body {
     color: #000000;
     font-family: 'DM Sans';
     font-size: 1rem;
+}
+
+/* edit menu burder */
+#menu-burger {
+    display: none;
+    background-color: black;
+    width: 100%;
+    opacity: 80%;
+    height: 100vh;
+    border-radius: 15px;
+    position: fixed;
+    margin-top: 130px;
+
+}
+
+.contenier-menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-content {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#menu-content .choising-buttons{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    color:  #fff;
+}
+
+#menu-content section {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-content .button-menu-icon {
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    color:  #fff;
+}
+
+.close-button {
+    align-self: flex-end;
+    width: 10%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    display: none;
+}
+
+#menu-content button:hover {
+    background-color: #c0baba;
+    color: #707070;
 }
 
 
@@ -231,11 +311,16 @@ footer{
         display: none;
     }
 
+    .edit-header .div-burger-menu{
+        display: block;
+        margin-right: 30px;
+    }
+
     .edit-header {
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        height: 25vh;
+        height: 20vh;
+        align-items: center;
     } 
 
     .edit-check-out .edit-price p {
